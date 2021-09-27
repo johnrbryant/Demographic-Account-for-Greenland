@@ -28,28 +28,30 @@ out/nonbirths.rds: src/nonbirths.R \
 	Rscript $<
 
 
-## Create CSVs ----------------------------------------------------------------
+## Estimate account -----------------------------------------------------------
 
-
-../data/reg_popn.csv: src/reg_popn.R \
+out/datasets.rds: src/datasets.R \
+  out/pxweb_births.rds \
   out/nonbirths.rds
 	Rscript $<
 
-../data/reg_births.csv: src/reg_births.R \
-  out/pxweb_births.rds
+out/data_models.rds: src/data_models.R
 	Rscript $<
 
-../data/reg_deaths.csv: src/reg_deaths.R \
-  out/nonbirths.rds
+out/system_models.rds: src/system_models.R
 	Rscript $<
 
-../data/reg_immigration.csv: src/reg_immigration.R \
-  out/nonbirths.rds
+out/account.rds: src/account.R \
+  out/datasets.rds
 	Rscript $<
 
-../data/reg_emigration.csv: src/reg_emigration.R \
-  out/nonbirths.rds
+out/model.est: src/model.R \
+  out/datasets.rds \
+  out/data_models.rds \
+  out/system_models.rds \
+  out/account.rds
 	Rscript $<
+
 
 
 ## Clean up -------------------------------------------------------------------
