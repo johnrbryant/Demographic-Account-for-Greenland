@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-out/*.rds
-out/*.est
+estimate_account/out/*.rds
+estiamte_account/out/*.est
