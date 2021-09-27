@@ -3,4 +3,4 @@
 .RData
 .Ruserdata
 estimate_account/out/*.rds
-estiamte_account/out/*.est
+estimate_account/out/model.est
