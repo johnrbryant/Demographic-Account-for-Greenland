@@ -16,9 +16,9 @@
   \runningauthor{...}
   \affil[1]{...}
   \affil[2]{...}
-  \title{...}
-  \runningtitle{...}
-  \subtitle{...}
+  \title{ Using demographic accounts to enhance official population statistics  }
+  \runningtitle{ Demographic accounts for Greenland }
+  \subtitle{Demographic accounts for Greenland}
   \abstract{...}
   \keywords{...}
   \classification[PACS]{...}
@@ -35,6 +35,174 @@
   \DOI{...}
 
 \maketitle
+
+
+
+\section{Introduction} 
+
+A demographic account is the demographic equivalent of a national account in economics. It is a comprehensive description of stocks and flows, linked together by accounting identities. Whereas a national account deals with economic quantities such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic quantities such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population sizes. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
+
+National accounts and demographic accounts have, however, followed very different trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as Gross Domestic Product or trade surplus are used by newspapers, politicians, and ordinary people. Although some demographic accounts, such as the \emph{World Population Prospects}, published by the United Nations Population Division, have become well-known, they are rarely described as demographic accounts. Neither the terminology nor the techniques of demographic accounting are widely used among professional statisticians and demographers.
+
+In this paper we argue that the adoption of formal demographic accounting can help improve the clarity, consistency, and easy of use of official population statistics. We illustrate using the case of Greenland, which already publishes explicit demographic accounts. We describe the process of producing demographic accounts for Greenland, the benefits to producing demographic accounts, and the system for disseminating the results to potential users. In the final part of the paper, we discuss the implications for the production of population statistics in other countries.
+
+
+\section{Greenland demographic data}
+
+\subsection{Population Register from 1973} 
+
+(Statistics Denmark published detailed Population Accounts in BB on paper from 1975-2004)
+
+Statistics on the Greenlandic population are all based on information in our administrative registers with 100 pct national coverage. The base register (CPR) was introduced to Greenland in 1972 and in effect for statistical purposes from 1977. All daily changes to the population’s addresses are recorded, by law, no later than 5 weekdays after occurrence and correctly. This would be a perfect data dream, which in real life, never happens. Even in a ultra small society as the Greenlandic, many hundred persons add changes to the central register annually, so of cause errors are reported, as also events are reported with some delay.
+
+Some events, especially on external migrations are reported more than a year after actual occurrence. Some very few death are also reported very late. According to law, a court can declare ‘presumption of death’ and issue a death certificate for a missing person, no earlier than 10 years after the person has disappeared.
+
+
+
+\section{Greenland demographic account}
+
+The Population Account for Greenland offers a set of coherent tables that allows calculations of all demographic measures at aggregated level.
+
+A core table holds totals of demographic events that  explains annual change in the population size. The sum of birth surplus and net migration makes up the difference in annual population estimates, but will only be accurate in a world with perfect data. In all practical situations there need to be a hopefully small correction figure added, to make the account coherent. At the same time, analysis of corrections offers valuable information on possible data problems, Statistics Greenland should aim to improve.
+
+The account can be broken down in categories like ‘place of birth’, sex and region and also from three variables ‘year of birth’, time and lexis-triangle, age can be calculated. 
+
+This is a sufficiently detailed table to serve as a model of the Greenlandic population ready to be consumed for descriptive purposes or as baseline in projections.
+
+At national level totals of net internal migration is per definition equal zero, but in regional forecasts movings between regions are essential in order to predict the size, sex and age distribution in the regions. Instead of adding dimensions on origin and destination to the core account, a satellite table focus on internal migrations.
+
+The same goes for number of live born. They too are accessible in a satellite table with dimensions ‘sex of child’ and on mother: ‘place of birth’, ‘year of birth’, age, region and time.
+
+
+
+\includegraphics[scale=0.4]{images/PopulationAccountCoreSatellite}
+
+category dimensions (sex, place of birth) can be filtered some with alternate classifications
+
+other fixed category dimensions could be relevant: 
+
+categories changing over time:
+citizenship, education, income, marital status
+
+
+\subsection{Dimensions in core table} 
+The central dimension in the core table is called ‘event’ eventhough it also holds population estimate at start and end of year. Population at start of year plus the sum of net-events equals population at end of year/start of the following year.
+
+\includegraphics[scale=0.4]{images/PopulationAccountCore}
+Filter dimensions are: area, ‘Place of Birth’ and gender, but the Greenlandic statistical system could provide altenate dimensions like ancestry, education, marital status, income
+
+
+\subsection{Age at event} 
+
+The Statbank Greenland, core table does not have an age dimension, instead age-at-event has to be calculated from ‘year of birth’ (cohort) and time (period) as time dimensions.
+
+To allow calculation at time of event a ‘triangles(lexis)’-dimension is provided. This enables calculation of age, at time of event. The vertical parallelogram counts events that are defined by calendar year and year of birth (cohort) - accross 2 agespans. Knowing that events occured before or after a persons birthday in a calendar year, is needed to calculate persons age at event, but then is easily calculated:
+
+\includegraphics[scale=0.25]{images/PopulationAccountLexis}
+
+
+
+\includegraphics[scale=0.22]{images/PopulationAccountTabX}
+
+
+To be current and of use to society statistics can not wait being 100 pct accurate. Instead we aim for the annual statistics to be true and fair. From experience we have chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. We then adjust the population estimate to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
+
+But on detailed level (one-year age groups, gender, locality) this will not be true.
+
+Changes in P(opulation) size are described by the vital statistics: B(irths), D(eaths), I(mmigrations) and E(migrations). But because of the delayed reports, a residual calculated c(orrection) post is added to ensure
+
+
+P(t+1) = P(t) + B(t) - D(t) + I(t) - E(t) + c(t)
+
+
+For subnational population calculations internal migration is simply added to this equation.
+
+The correcton post offers important quality information on how well the vital statistics explains changes in population size over time.
+
+As the content is not 100 pct accurate, but true and fair, this serves as a model of the Greenlandic population
+
+
+\subsection{Statbank Greenland} 
+...
+
+\section{Dealing with discrepancies}
+
+Corrections are residuals, calculated to balance the sum of events in any period to explain change in the periodic population estimate.
+
+No statistical office can produce a 100 percent correct population account, without any adjustment. Statistics Greenland has chosen, not to ajust, not to hide data discrepancies. Instead corrections are treated as vital quality information on the collection/production system.
+
+Errors and data discrepancies are as natural as birth and death, and analysis of the discrepancies can help us improve.
+
+First of all discrepancies can be caused by for instance: a) Some registrations in the population register are not considered. The register holds information on persons gone missing, and being refound b) The administrative register is updated by humans, not always knowing the full truth. Typos, errors and better information can lead to multiple updates to the same event. To lower complications when calculation, not all corrections are used c) Statistics Greenland only take into account, events that have been reported no later than one calendar month after the period ends.
+
+a and b could be improved, but a short cost/benefit has given this extremely low priority. c is no problem at aggregate level, if reports of future events not known at the time of production are more or less equal to the latecomming reports from previous years. Compared with results of longetutional analysis there will be small discrepancies. But that is the name of the game.
+
+When corrections are summarized over time they diminish. In table x the corrections for the 2006-cohort is down to -1 over a 15 year period. 
+
+
+\begin{figure}
+    \centering
+    \includegraphics{}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+\section{Benefits of a demographic account}
+
+\begin{itemize}
+    \item data corrections (note - will discuss further below)
+    \item understanding Greenland demographic system (eg movements to/from Denmark)
+    \item transparency eg in forecasting
+    \item make it easy for people to get data on demographic change, all in one place - and understand
+    \item better scenario analysis
+\end{itemize}
+
+
+
+\section{Dissemination}
+
+\begin{itemize}
+    \item stat bank system
+    \item ease of getting data
+    \item common conventions on what the data should look like (to go with common software)
+    \item how to disseminate uncertainty?
+\end{itemize}
+
+\section{Discussion (implications for other countries)}
+
+\begin{itemize}
+    \item can other countries emulate Greenland?: countries with good data vs countries with bad data
+    \item why is it also useful in other countries
+    \item can countries without population registers emulate greenland
+    \item many agencies do accounting implicitly, adhoc
+    denmark published from 1975-2004, then stopped ) :
+    \item accounts for holland, faroe islands
+    
+\end{itemize}
+
+What about countries without population registers?
+\begin{itemize}
+    \item a population count is a *model* of the population
+    \item if a country does not have a population register but can estimate it, then they can still do an account; and reconcile via stat method
+    \item need to be transparent but it best that can be produced
+    \item we use National Accounts - even though they are badly imperfect
+    \item in Copenhagen, demographic accounts where part of the demography mainstream
+\end{itemize}
+
+
+\begin{acknowledgement}
+  ...
+\end{acknowledgement}
+
+%\bibliographystyle{...}
+%\bibliography{...}
+\end{document}
+
+
+
+******************** NOTES *************************************
 
 
 - we are assuming good-quality (even if not perfect) input data
@@ -92,16 +260,9 @@ outline of paper
 - 
 - 
 
-\section{What is a demographic account}
 
 
-\section{Why are demographic accounts useful?}
-
-
-
-
-
-\section{Focus of paper}
+FOCUS OF PAPER
 
 opening statement? why this paper?
 
@@ -187,96 +348,6 @@ a lot of demographic accounting is implicit
     - Eurostat is doing something (UNIDEMO)
     - 
 
-\section{Introduction} 
-The Population Account for Greenland offers a set of coherent tables that allows calculations of all demographic measures at aggregated level.
-
-A core table holds totals of demographic events that  explains annual change in the population size. The sum of birth surplus and net migration makes up the difference in annual population estimates, but will only be accurate in a world with perfect data. In all practical situations there need to be a hopefully small correction figure added, to make the account coherent. At the same time, analysis of corrections offers valuable information on possible data problems, Statistics Greenland should aim to improve.
-
-The account can be broken down in categories like ‘place of birth’, sex and region and also from three variables ‘year of birth’, time and lexis-triangle, age can be calculated. 
-
-This is a sufficiently detailed table to serve as a model of the Greenlandic population ready to be consumed for descriptive purposes or as baseline in projections.
-
-At national level totals of net internal migration is per definition equal zero, but in regional forecasts movings between regions are essential in order to predict the size, sex and age distribution in the regions. Instead of adding dimensions on origin and destination to the core account, a satellite table focus on internal migrations.
-
-The same goes for number of live born. They too are accessible in a satellite table with dimensions ‘sex of child’ and on mother: ‘place of birth’, ‘year of birth’, age, region and time.
 
 
 
-\includegraphics[scale=0.4]{images/PopulationAccountCoreSatellite}
-
-category dimensions (sex, place of birth) can be filtered some with alternate classifications
-
-other fixed category dimensions could be relevant: 
-
-categories changing over time:
-citizenship, education, income, marital status
-
-
-\subsection{Dimensions in core table} 
-The central dimension in the core table is called ‘event’ eventhough it also holds population estimate at start and end of year. Population at start of year plus the sum of net-events equals population at end of year/start of the following year.
-
-\includegraphics[scale=0.4]{images/PopulationAccountCore}
-Filter dimensions are: area, ‘Place of Birth’ and gender, but the Greenlandic statistical system could provide altenate dimensions like ancestry, education, marital status, income
-
-
-\subsection{Age at event} 
-
-The Statbank Greenland, core table does not have an age dimension, instead age-at-event has to be calculated from ‘year of birth’ (cohort) and time (period) as time dimensions.
-
-To allow calculation at time of event a ‘triangles(lexis)’-dimension is provided. This enables calculation of age, at time of event. The vertical parallelogram counts events that are defined by calendar year and year of birth (cohort) - accross 2 agespans. Knowing that events occured before or after a persons birthday in a calendar year, is needed to calculate persons age at event, but then is easily calculated:
-
-\includegraphics[scale=0.25]{images/PopulationAccountLexis}
-
-\subsection{Corrections} 
-Corrections are residuals, calculated to balance the sum of events in any period to explain change in the periodic population estimate.
-
-No statistical office can produce a 100 percent correct population account, without any adjustment. Statistics Greenland has chosen, not to ajust, not to hide data discrepancies. Instead corrections are treated as vital quality information on the collection/production system.
-
-Errors and data discrepancies are as natural as birth and death, and analysis of the discrepancies can help us improve.
-
-First of all discrepancies can be caused by for instance: a) Some registrations in the population register are not considered. The register holds information on persons gone missing, and being refound b) The administrative register is updated by humans, not always knowing the full truth. Typos, errors and better information can lead to multiple updates to the same event. To lower complications when calculation, not all corrections are used c) Statistics Greenland only take into account, events that have been reported no later than one calendar month after the period ends.
-
-a and b could be improved, but a short cost/benefit has given this extremely low priority. c is no problem at aggregate level, if reports of future events not known at the time of production are more or less equal to the latecomming reports from previous years. Compared with results of longetutional analysis there will be small discrepancies. But that is the name of the game.
-
-When corrections are summarized over time they diminish. In table x the corrections for the 2006-cohort is down to -1 over a 15 year period. 
-
-
-\includegraphics[scale=0.22]{images/PopulationAccountTabX}
-
-
-\subsection{Population Register from 1973} 
-
-(Statistics Denmark published detailed Population Accounts in BB on paper from 1975-2004)
-
-Statistics on the Greenlandic population are all based on information in our administrative registers with 100 pct national coverage. The base register (CPR) was introduced to Greenland in 1972 and in effect for statistical purposes from 1977. All daily changes to the population’s addresses are recorded, by law, no later than 5 weekdays after occurrence and correctly. This would be a perfect data dream, which in real life, never happens. Even in a ultra small society as the Greenlandic, many hundred persons add changes to the central register annually, so of cause errors are reported, as also events are reported with some delay.
-
-Some events, especially on external migrations are reported more than a year after actual occurrence. Some very few death are also reported very late. According to law, a court can declare ‘presumption of death’ and issue a death certificate for a missing person, no earlier than 10 years after the person has disappeared.
-
-To be current and of use to society statistics can not wait being 100 pct accurate. Instead we aim for the annual statistics to be true and fair. From experience we have chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. We then adjust the population estimate to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
-
-But on detailed level (one-year age groups, gender, locality) this will not be true.
-
-Changes in P(opulation) size are described by the vital statistics: B(irths), D(eaths), I(mmigrations) and E(migrations). But because of the delayed reports, a residual calculated c(orrection) post is added to ensure
-
-P(t+1)≡P(t)+B(t)−D(t)+I(t)−E(t)+c(t)
-, where t= time
-
-For subnational population calculations internal migration is simply added to this equation.
-
-The correcton post offers important quality information on how well the vital statistics explains changes in population size over time.
-
-As the content is not 100 pct accurate, but true and fair, this serves as a model of the Greenlandic population
-
-
-\subsection{Statbank Greenland} 
-...
-
-
-
-\begin{acknowledgement}
-  ...
-\end{acknowledgement}
-
-%\bibliographystyle{...}
-%\bibliography{...}
-\end{document}
