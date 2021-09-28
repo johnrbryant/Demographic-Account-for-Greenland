@@ -4,7 +4,8 @@
 ## and put the in the 'data' folder
 
 .PHONY: all
-all: out/fig_account.pdf
+all: out/fig_values.pdf \
+     out/fig_diff.pdf
 
 
 ## Pull data from Statistics Greenland website --------------------------------
@@ -48,8 +49,19 @@ out/model.est: src/model.R \
   out/account.rds
 	Rscript $<
 
-out/fig_account.pdf: src/fig_account.R \
+
+## Graph results --------------------------------------------------------------
+
+out/vals_account.rds: src/vals_account.R \
   out/model.est
+	Rscript $<
+
+out/fig_values.pdf: src/fig_values.R \
+  out/vals_account.rds
+	Rscript $<
+
+out/fig_diff.pdf: src/fig_diff.R \
+  out/vals_account.rds
 	Rscript $<
 
 
