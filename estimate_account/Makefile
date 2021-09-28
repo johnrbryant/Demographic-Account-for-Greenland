@@ -4,11 +4,7 @@
 ## and put the in the 'data' folder
 
 .PHONY: all
-all: ../data/reg_popn.csv \
-  ../data/reg_births.csv \
-  ../data/reg_deaths.csv \
-  ../data/reg_immigration.csv \
-  ../data/reg_emigration.csv
+all: out/fig_account.pdf
 
 
 ## Pull data from Statistics Greenland website --------------------------------
@@ -50,6 +46,10 @@ out/model.est: src/model.R \
   out/data_models.rds \
   out/system_models.rds \
   out/account.rds
+	Rscript $<
+
+out/fig_account.pdf: src/fig_account.R \
+  out/model.est
 	Rscript $<
 
 

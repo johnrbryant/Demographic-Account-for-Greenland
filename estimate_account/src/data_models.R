@@ -1,19 +1,19 @@
 
 library(demest)
 
-mod_popn <- Model(reg_popn ~ PoissonBinomial(prob = 0.98),
+mod_popn <- Model(reg_popn ~ PoissonBinomial(prob = 0.99),
                   series = "population")
 
-mod_births <- Model(reg_births ~ PoissonBinomial(prob = 0.98),
+mod_births <- Model(reg_births ~ PoissonBinomial(prob = 0.99),
                     series = "births")
 
-mod_deaths <- Model(reg_deaths ~ PoissonBinomial(prob = 0.98),
+mod_deaths <- Model(reg_deaths ~ PoissonBinomial(prob = 0.99),
                     series = "deaths")
 
-mod_immigration <- Model(reg_immigration ~ PoissonBinomial(prob = 0.95),
+mod_immigration <- Model(reg_immigration ~ PoissonBinomial(prob = 0.97),
                          series = "immigration")
 
-mod_emigration <- Model(reg_emigration ~ PoissonBinomial(prob = 0.95),
+mod_emigration <- Model(reg_emigration ~ PoissonBinomial(prob = 0.97),
                         series = "emigration")
 
 
