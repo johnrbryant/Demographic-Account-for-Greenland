@@ -9,21 +9,21 @@ data_popn_box <- data.frame(x = c(0, 2, 2, 0, 1),
                             yend = c(0, 1, 1, 0, 1))
 data_popn_label <- data.frame(x = c(1, 0.5, 1.5, 0.5, 1.5),
                               y = c(1.2, 0.5, 0.5, -0.3, -0.3),
-                              label = c("Population", 6, 7, "italic(t)", "italic(t)+1"))
+                              label = c("Population", 16, 17, "italic(t)", "italic(t)+1"))
 data_births_box <- data.frame(x = c(2.5, 3.5, 3.5, 2.5),
                               xend = c(3.5, 3.5, 2.5, 2.5),
                               y = c(0, 0, 1, 1),
                               yend = c(0, 1, 1, 0))
 data_births_label <- data.frame(x = c(3, 3, 3),
                                 y = c(1.2, 0.5, -0.3),
-                                label = c("Births", 3, 'group("[",list(italic(t),italic(t+1)),")")'))
+                                label = c("Births", 8, 'group("[",list(italic(t),italic(t+1)),")")'))
 data_deaths_box <- data.frame(x = c(4, 5, 5, 4),
                               xend = c(5, 5, 4, 4),
                               y = c(0, 0, 1, 1),
                               yend = c(0, 1, 1, 0))
 data_deaths_label <- data.frame(x = c(4.5, 4.5, 4.5),
                                 y = c(1.2, 0.5, -0.3),
-                                label = c("Deaths", 2, 'group("[",list(italic(t),italic(t+1)),")")'))
+                                label = c("Deaths", 7, 'group("[",list(italic(t),italic(t+1)),")")'))
 p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     theme_bw() +
     theme(panel.border = element_blank(),
@@ -54,4 +54,10 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     ## other
     xlab("") +
     ylab("")
-p
+
+graphics.off()
+pdf(file = "fig_account_noage.pdf",
+    width = 5,
+    height = 1.5)
+plot(p)
+dev.off()
