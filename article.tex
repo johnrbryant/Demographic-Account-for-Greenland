@@ -4,6 +4,7 @@
 \usepackage[small]{dgruyter}
 \usepackage{microtype}
 \usepackage{graphicx}
+\usepackage{subcaption}
 %\graphicspath{ {./images/} }
 
 \begin{document}
@@ -21,18 +22,8 @@
   \subtitle{Demographic accounts for Greenland}
   \abstract{...}
   \keywords{...}
-  \classification[PACS]{...}
-  \communicated{...}
-  \dedication{...}
-  \received{...}
-  \accepted{...}
-  \journalname{...}
-  \journalyear{...}
-  \journalvolume{..}
-  \journalissue{..}
   \startpage{1}
   \aop
-  \DOI{...}
 
 \maketitle
 
@@ -47,11 +38,29 @@ National accounts and demographic accounts have, however, followed very differen
 In this paper we argue that the adoption of formal demographic accounting can help improve the clarity, consistency, and easy of use of official population statistics. We illustrate using the case of Greenland, which already publishes explicit demographic accounts. We describe the process of producing demographic accounts for Greenland, the benefits to producing demographic accounts, and the system for disseminating the results to potential users. In the final part of the paper, we discuss the implications for the production of population statistics in other countries.
 
 
+\section{What are demographic accounts?}
+
+\subsection{Examples}
+
+
+
+
+- without age
+- with age
+   - with cohort
+   - without explicit cohort
+- show the splitting and combining that occurs   
+- age, cohort, and region
+   - internal migration is tricky
+- age, cohort, and region - fixed attribute (sex? birthplace)
+
+
+
 \section{Greenland demographic data}
 
 \subsection{Population Register from 1973} 
 
-(Statistics Denmark published detailed Population Accounts in BB on paper from 1975-2004)
+(Statistics Denmark published detailed Population Accounts with [Lexis-triangles]("Befolkningens Bevægelser") on paper from 1964-2004)
 
 Statistics on the Greenlandic population are all based on information in our administrative registers with 100 pct national coverage. The base register (CPR) was introduced to Greenland in 1972 and in effect for statistical purposes from 1977. All daily changes to the population’s addresses are recorded, by law, no later than 5 weekdays after occurrence and correctly. This would be a perfect data dream, which in real life, never happens. Even in a ultra small society as the Greenlandic, many hundred persons add changes to the central register annually, so of cause errors are reported, as also events are reported with some delay.
 
@@ -105,7 +114,7 @@ To allow calculation at time of event a ‘triangles(lexis)’-dimension is prov
 \includegraphics[scale=0.22]{images/PopulationAccountTabX}
 
 
-To be current and of use to society statistics can not wait being 100 pct accurate. Instead we aim for the annual statistics to be true and fair. From experience we have chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. We then adjust the population estimate to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
+To be current and of use to society statistics can not wait being 100 pct accurate. Instead the statistics to be true and fair. From experience it has been chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. Then the population estimate is adjusted to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
 
 But on detailed level (one-year age groups, gender, locality) this will not be true.
 
@@ -125,13 +134,22 @@ As the content is not 100 pct accurate, but true and fair, this serves as a mode
 \subsection{Statbank Greenland} 
 ...
 
-\section{Dealing with discrepancies}
+\section{Discrepancies}
+
+\section{What are discrepancies?}
+
+- reference to national accounts
+- example from Greenland
+
+
+
+\subsection{How inconsistencies occur}
 
 Corrections are residuals, calculated to balance the sum of events in any period to explain change in the periodic population estimate.
 
-No statistical office can produce a 100 percent correct population account, without any adjustment. Statistics Greenland has chosen, not to ajust, not to hide data discrepancies. Instead corrections are treated as vital quality information on the collection/production system.
+No statistical office can produce a 100 percent correct population account, without any adjustment. Statistics Greenland has chosen, not to adjust, not to hide data discrepancies. Instead corrections are treated as vital quality information on the collection/production system.
 
-Errors and data discrepancies are as natural as birth and death, and analysis of the discrepancies can help us improve.
+Errors and data discrepancies are as natural as birth and death, and analysis of the discrepancies can help in search for possible improvements.
 
 First of all discrepancies can be caused by for instance: a) Some registrations in the population register are not considered. The register holds information on persons gone missing, and being refound b) The administrative register is updated by humans, not always knowing the full truth. Typos, errors and better information can lead to multiple updates to the same event. To lower complications when calculation, not all corrections are used c) Statistics Greenland only take into account, events that have been reported no later than one calendar month after the period ends.
 
@@ -139,11 +157,33 @@ a and b could be improved, but a short cost/benefit has given this extremely low
 
 When corrections are summarized over time they diminish. In table x the corrections for the 2006-cohort is down to -1 over a 15 year period. 
 
+\subsection{Methods to eliminate discrepancies}
+
+\subsubsection{Pure expert judgement}
+
+\citep{lomax2013subnational}
+
+
+\subsubsection{Quality-based weights}
+
+
+
+
+\subsubsection{System models and data models}
+
+\citep{bryant2013bayesian} \citep{wheldon2013reconstructing}\citep{wheldon2015bayesian}
 
 \begin{figure}
     \centering
-    \includegraphics{}
-    \caption{Caption}
+    \begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{estimate_account/out/fig_values}
+    \caption{Original and adjusted values}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{estimate_account/out/fig_diff}
+    \caption{Differences between original and adjusted values}
+    \end{subfigure} 
+    \caption{Adjustment of Greenland account, using Bayesian demographic accounts. The upper panels show illustrative results for females, for two components of the account, in 2015. The lower panels show the size of the differences between original and adjusted values. See the text for a description of the model.   }
     \label{fig:my_label}
 \end{figure}
 
@@ -177,7 +217,7 @@ When corrections are summarized over time they diminish. In table x the correcti
     \item why is it also useful in other countries
     \item can countries without population registers emulate greenland
     \item many agencies do accounting implicitly, adhoc
-    denmark published from 1975-2004, then stopped ) :
+    denmark published on paper from 1964-2004, then stopped ) :
     \item accounts for holland, faroe islands
     
 \end{itemize}
@@ -348,6 +388,41 @@ a lot of demographic accounting is implicit
     - Eurostat is doing something (UNIDEMO)
     - 
 
+Why bother with Lexis triangles
+- if we have the data, then we can do all theoretical possible ways of calculating life expectancy - more refined indicators
+- there are some indicators of interest that are related to cohorts - eg cohort fertility, mortality
+- need cohorts/triangles to make translation between period and cohort nicely - if you have the data, then why not use it; if you are modelling, it is best to be explicit
+- differences may be small empirically; 
+- you should publish both cohort and age views
+- publishing both means that it is not a black box
+- can't assess internal consistency without looking at cohorts
+- cohorts are neglected social unit - we want make it easy to calculate chorts  - it is painful or impossible to calculate (they are not transparent) 
+- get most value from data
 
+
+- Are Lexis triangles too hard
+- How old am I?
+   - Lexis triangle shows us how to calculate how old we are
+   - 
+
+
+
+
+If we have standard format for demographic data, then we can have standard/generic models - just like with demographic accounts
+
+Most countries already have demographic accounts - we want them to make the accounts more standard and detailed - so they are comparable
+
+Greenland is the example
+- 
+
+
+Denmark did demographic accounts with Lexis triangles in 1964 by hand 
+- they stopped in 2005, when transferring to the statbank, but never included in statbank
+- why did Denmark do demographic accounts? Used in calculation of life expectancy
+
+
+with big data era, big tables is no big deal - provided that data is standardised
+
+look at the example of HMD - having standardized detailed data for many countries has had huge impact on the study of mortality
 
 
