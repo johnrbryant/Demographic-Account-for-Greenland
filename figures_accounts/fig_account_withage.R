@@ -62,8 +62,8 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     ylab("Age")
 
 graphics.off()
-pdf(file = "fig_account_withage.pdf",
-    width = 5,
-    height = 3.3)
+pdf(file = "figures_accounts/fig_account_withage.pdf",
+    width = 4,
+    height = 2.7)
 plot(p)
 dev.off()

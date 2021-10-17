@@ -56,8 +56,8 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     ylab("")
 
 graphics.off()
-pdf(file = "fig_account_noage.pdf",
-    width = 5,
-    height = 1.5)
+pdf(file = "figures_accounts/fig_account_noage.pdf",
+    width = 4,
+    height = 1.2)
 plot(p)
 dev.off()

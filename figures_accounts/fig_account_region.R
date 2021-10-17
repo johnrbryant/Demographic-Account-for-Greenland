@@ -52,8 +52,8 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     ylab("Region")
 
 graphics.off()
-pdf(file = "fig_account_region.pdf",
-    width = 5,
-    height = 2.8)
+pdf(file = "figures_accounts/fig_account_region.pdf",
+    width = 4,
+    height = 2.1)
 plot(p)
 dev.off()
