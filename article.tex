@@ -32,14 +32,16 @@
 
 \section{Introduction} 
 
-A demographic account is the demographic equivalent of a national account in economics. It is a comprehensive description of stocks and flows, linked together by accounting identities. Whereas a national account deals with economic quantities such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic quantities such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population sizes. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
+A demographic account is to demography what a national account is to macroeconomics. It is a comprehensive description of stocks and flows, linked together by accounting identities, and standardised across countries and datasets. Whereas a national account deals with economic variables such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic variables such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population sizes. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
 
-National accounts and demographic accounts have, however, followed very different trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as Gross Domestic Product or trade surplus are used by newspapers, politicians, and ordinary people. Although some demographic accounts, such as the \emph{World Population Prospects}, published by the United Nations Population Division, have become well-known, they are rarely described as demographic accounts. Neither the terminology nor the techniques of demographic accounting are widely used among professional statisticians and demographers.
+National accounts and demographic accounts have, however, followed very different trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as Gross Domestic Product or trade surplus are used by newspapers, politicians, and ordinary people. The United Nations, the European Union, and others have established detailed guidelines on the compilation of national accounts. REFERENCES. Although some demographic accounts, such as the \emph{World Population Prospects}, published by the United Nations Population Division, have become well-known, they are rarely described as demographic accounts, and are, from an accounting perspective, incomplete. Scholars from a variety of disciplines have developed conceptual frameworks and estimation methods for demographic accounts \citep{rees1977spatial,rees1986data, rees1979regional,rees1985choices,rees2012ethnic,bryant2013bayesian, wheldon2013reconstructing,willekens2011population} OTHER. However, no standard, widely-accepted set oc conventions comparable to the UN guidelines for national accounts has emerged. Moreover, the terminology and techniques of demographic accounting are not often used among professional statisticians and demographers.
 
 In this paper we argue that the adoption of formal demographic accounting can help improve the clarity, consistency, and easy of use of official population statistics. We illustrate using the case of Greenland, which already publishes explicit demographic accounts. We describe the process of producing demographic accounts for Greenland, the benefits to producing demographic accounts, and the system for disseminating the results to potential users. In the final part of the paper, we discuss the implications for the production of population statistics in other countries.
 
 
 \section{What are demographic accounts?}
+
+
 
 \subsection{Examples}
 
@@ -49,6 +51,8 @@ In this paper we argue that the adoption of formal demographic accounting can he
 \includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_withage.pdf}
 
 \includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_region.pdf}
+
+\includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_withage2.pdf}
 
 
 - without age
@@ -68,9 +72,9 @@ In this paper we argue that the adoption of formal demographic accounting can he
 
 (Statistics Denmark published detailed Population Accounts with [Lexis-triangles]("Befolkningens Bevægelser") on paper from 1964-2004)
 
-Statistics on the Greenlandic population are all based on information in our administrative registers with 100 pct national coverage. The base register (CPR) was introduced to Greenland in 1972 and in effect for statistical purposes from 1977. All daily changes to the population’s addresses are recorded, by law, no later than 5 weekdays after occurrence and correctly. This would be a perfect data dream, which in real life, never happens. Even in a ultra small society as the Greenlandic, many hundred persons add changes to the central register annually, so of cause errors are reported, as also events are reported with some delay.
+Statistics on the Greenlandic population are all based on information in administrative registers with 100 pct national coverage. The base register (CPR) was introduced to Greenland in 1972 and in effect for statistical purposes from 1977. All daily changes to the population’s addresses are recorded, by law, no later than 5 weekdays after occurrence and correctly. This would be a perfect data dream, which in real life, never happens. Even in a ultra small society as the Greenlandic, many hundred persons add changes to the central register annually, so of cause errors are reported, as also events are reported with some delay.
 
-Some events, especially on external migrations are reported more than a year after actual occurrence. Some very few death are also reported very late. According to law, a court can declare ‘presumption of death’ and issue a death certificate for a missing person, no earlier than 10 years after the person has disappeared.
+Some events, especially on external migrations are reported more than a year after actual occurrence. Some very few death are also reported very late. According to law, a court can issue a death certificate declaring ‘presumption of death’ of a missing person, no earlier than 10 years after the person disappeared.
 
 
 
@@ -116,11 +120,12 @@ To allow calculation at time of event a ‘triangles(lexis)’-dimension is prov
 \includegraphics[scale=0.25]{images/PopulationAccountLexis}
 
 
+(Lars: collumns are not in right sort-order!)
 
 \includegraphics[scale=0.22]{images/PopulationAccountTabX}
 
 
-To be current and of use to society statistics can not wait being 100 pct accurate. Instead the statistics to be true and fair. From experience it has been chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. Then the population estimate is adjusted to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
+To be current and of use to society statistics can not wait being 100 pct accurate. Instead we settle when the statistics are true and fair. From experience it has been chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. Then the population estimate is adjusted to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
 
 But on detailed level (one-year age groups, gender, locality) this will not be true.
 
@@ -138,7 +143,16 @@ As the content is not 100 pct accurate, but true and fair, this serves as a mode
 
 
 \subsection{Statbank Greenland} 
-...
+Statistics Greenland has been disseminating statistical tables with Pxweb as multilingual internet based service since 2001. The technical core is [the Pxweb-family](https://www.scb.se/px-web), primarily developed by Statistics Sweden in cooperation with approximately 40 national statistical offices over a span of 5 decades. 
+
+In 2013 the system opened for api access.(Lars: not sure if stat2go should be mentioned - my playground) As proof of concept www.stat2go.com gives access to a number of different pxweb statbanks, and api allows developers to reuse and include statistical information in numerous solutions.
+
+For the R-community the pxweb-package offers pxweb::interactive as a code-generator(learning ressource on how to consume pxweb statbanks). 
+
+
+
+Reference: Magnusson M, Kainu M, Huovari J, Lahti L (2019). “pxweb: R tools for PX-WEB API.”
+
 
 \section{Discrepancies}
 
@@ -242,8 +256,9 @@ What about countries without population registers?
   ...
 \end{acknowledgement}
 
-%\bibliographystyle{...}
-%\bibliography{...}
+\bibliographystyle{apalike}
+\bibliography{references}{}
+
 \end{document}
 
 
