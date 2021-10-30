@@ -23,9 +23,9 @@ data_deaths_box <- data.frame(x =    c(4, 5, 5, 4, 4, 4, 4, 4, 4),
 data_deaths_label <- data.frame(x = c(4.5, 4.2, 4.7, 4.2, 4.7, 4.2, 4.7, 4.5),
                                 y = c(3.2, 0.7, 0.3, 1.7, 1.3, 2.7, 2.3, -0.4),
                                 label = c("Deaths", 1, 2, 0, 1, 2, 1, 'group("[",list(italic(t),italic(t+1)),")")'))
-data_age_label <- data.frame(x = rep(-0.6, 3),
+data_age_label <- data.frame(x = rep(-0.3, 3),
                              y = c(0.5, 1.5, 2.5),
-                             label = c("Age 0", "Age 1", "Age 2+"))
+                             label = c("0", "1", "2+"))
                                        
 p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     theme_bw() +
