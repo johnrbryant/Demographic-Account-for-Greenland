@@ -38,21 +38,52 @@ National accounts and demographic accounts have, however, followed very differen
 
 In this paper we argue that the adoption of formal demographic accounting can help improve the clarity, consistency, and easy of use of official population statistics. We illustrate using the case of Greenland, which already publishes explicit demographic accounts. We describe the process of producing demographic accounts for Greenland, the benefits to producing demographic accounts, and the system for disseminating the results to potential users. In the final part of the paper, we discuss the implications for the production of population statistics in other countries.
 
+[Need that Stone's original social and demographic accounts had more than just basic demography]
+
 
 \section{What are demographic accounts?}
 
+\begin{quote}
+Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings who in a given period enter or leave a country...In any period, the equality of inflows and outflows implied that the difference between the open and closing stocks is equal to the net inflow from the outside world.'' \citep[][p. 26]{stone1984accounts}
+\end{quote}
+
+The stocks referred to by Richard Stone in the quote above are counts of people at points in time. The flows are counts of events, such as births, deaths, and migrations, during the intervals between the points. A simple example is
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_noage.pdf}
+\end{center}
+In the demographic system being described, the population contains 16 at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people were born and 7 died. The change in stock (1) equals the net inflow (1), as required.
+
+We may, however, wish to distinguish different groups within the population. The following example classifies people according to their region of residence, with the two regions labelled ``A'' and ``B''.
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_region.pdf}
+\end{center}
+During the interval between times $t$ and $t+1$ 5 people migrant from region A to region B, and 1 person migrates from region B to region A. For simplicity, we assume there are no births or deaths. We require changes in stocks to equal net inflows separately for each region,
+\begin{align}
+    11 - 15 & = -5 + 1
+    14 - 10 & = -1 + 5.
+\end{align}
+Equality within each region implies equality at the national level, which in this case reduces to stating that 0 = 0.
 
 
-\subsection{Examples}
 
 
-\includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_noage.pdf}
 
-\includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_withage.pdf}
 
-\includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_region.pdf}
 
-\includegraphics[width=0.9\textwidth]{figures_accounts/fig_account_withage2.pdf}
+The change in stock in this case is population at time $t+1$ minus population at time $t$. The net inflow is births minus deaths. Changes in stock equal the net inflow, as required.
+
+
+
+
+
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage.pdf}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage2.pdf}
+\end{center}
 
 
 - without age
@@ -143,12 +174,18 @@ As the content is not 100 pct accurate, but true and fair, this serves as a mode
 
 
 \subsection{Statbank Greenland} 
-Statistics Greenland has been disseminating statistical tables with Pxweb as multilingual internet based service since 2001. The technical core is [the Pxweb-family](https://www.scb.se/px-web), primarily developed by Statistics Sweden in cooperation with approximately 40 national statistical offices over a span of 5 decades. 
+not ready - will be back soon - Lars
+With api access to Pxweb-based statbanks it is now possible to include always updated statistics in calculation 
+
+Statistics Greenland has been disseminating statistical tables with Pxweb as multilingual internet based service since 2001. The technical core is \footnote[the Pxweb-family]{https://www.scb.se/px-web}, primarily developed by Statistics Sweden in cooperation with approximately 40 national statistical offices over a span of 5 decades. 
 
 In 2013 the system opened for api access.(Lars: not sure if stat2go should be mentioned - my playground) As proof of concept www.stat2go.com gives access to a number of different pxweb statbanks, and api allows developers to reuse and include statistical information in numerous solutions.
 
-For the R-community the pxweb-package offers pxweb::interactive as a code-generator(learning ressource on how to consume pxweb statbanks). 
+For the R-community the pxweb-package ease consuming data, from any pxweb based statbank. 
 
+(Lars: if this pic is to be used, I will compress it a little with better texts)
+
+\includegraphics[scale=0.22]{images/pxwebR.png}
 
 
 Reference: Magnusson M, Kainu M, Huovari J, Lahti L (2019). “pxweb: R tools for PX-WEB API.”
@@ -447,3 +484,29 @@ with big data era, big tables is no big deal - provided that data is standardise
 look at the example of HMD - having standardized detailed data for many countries has had huge impact on the study of mortality
 
 
+- Stone's social and demographic accounts looked at non-demographic variables
+- these could be useful for Stats agencies - eg demographic accounts for labour market
+
+- Greenland - linelines. Data automatically internally consistent
+- Nordic countries have this amazing data that allows lifelines
+- researchers allowed to access, with lots of privacy restriction
+
+- discussion: start with demographic variables, and then move to other social/economic variables
+- demographic variables are simpler
+- core demographic account is baseline to all projection
+   - demographic variables are foundation for other parts
+   - have satellite tables
+- if a demographic account is available to researchers, they can build their own projections
+- they can try lots of different methods and solutions
+- can compare and share ideas across countries
+
+
+why did demographic accounts die out in 1970s 1980s?
+- perhaps too difficult to deal with big numbers (with their limited budgets)
+- maybe statistical methods not up to the job
+- Nordic countries wrote their theory only in Danish etc
+- demographic accounting done in stats agencies
+    - stats agencies are not good at documenting what they do
+    - no accumulation, critical mass 
+    - 
+- 
