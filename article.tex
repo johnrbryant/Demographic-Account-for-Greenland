@@ -41,49 +41,54 @@ In this paper we argue that the adoption of formal demographic accounting can he
 [Need that Stone's original social and demographic accounts had more than just basic demography]
 
 
-\section{What are demographic accounts?}
+\section{What is a demographic account?}
 
 \begin{quote}
-Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings who in a given period enter or leave a country...In any period, the equality of inflows and outflows implied that the difference between the open and closing stocks is equal to the net inflow from the outside world.'' \citep[][p. 26]{stone1984accounts}
+Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings.\citep[][p. 26]{stone1984accounts}
 \end{quote}
 
-The stocks referred to by Richard Stone in the quote above are counts of people at points in time. The flows are counts of events, such as births, deaths, and migrations, during the intervals between the points. A simple example is
+A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows classified, varies from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
+
+An example of a minimal demographic account is
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_noage.pdf}
 \end{center}
-In the demographic system being described, the population contains 16 at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people were born and 7 died. The change in stock (1) equals the net inflow (1), as required.
+The population contains 16 people at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people are born and 7 die. The change in stock equals inflows minus outflows,
+\begin{equation*}
+  17 - 16 = 8 - 7,
+\end{equation*}
+as required.
 
-We may, however, wish to distinguish different groups within the population. The following example classifies people according to their region of residence, with the two regions labelled ``A'' and ``B''.
+A slightly more complicated account is
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_region.pdf}
 \end{center}
-During the interval between times $t$ and $t+1$ 5 people migrant from region A to region B, and 1 person migrates from region B to region A. For simplicity, we assume there are no births or deaths. We require changes in stocks to equal net inflows separately for each region,
-\begin{align}
-    11 - 15 & = -5 + 1
-    14 - 10 & = -1 + 5.
-\end{align}
-Equality within each region implies equality at the national level, which in this case reduces to stating that 0 = 0.
+Rather than treating the population as a completely homogenous, the account distinguishes two groups. If  whole,  
+We include migration between the two regions in the account, but for this artificial example we assume that there are no births, deaths, or migrations to and from the rest of the world. We apply the demographic accounting identities separately to each region,
+\begin{align*}
+    11 - 15 & = -5 + 1 \quad \text{(A)}\\
+    14 - 10 & = -1 + 5 \quad \text{(B)}.
+\end{align*}
+When the accounting identities for each region are satisfied, the accounting identity for the system is a whole is necessarily satisfied as well.
 
+One particular type of disaggregation has a special status within demography: disaggregation by age. Age is special because it is such a strong predictor of demographic behavior. The mortality and migration rates of 20 year olds and 90 year olds, for instance, differ by orders of magnitude. Age is also special because movement between age groups is deterministic: everyone is born into the lowest age group, and then moves upwards at the rate of one age group per period.
 
+Publishers of age-structured demographic data typically use some variant of the following scheme,
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage2.pdf}
+\end{center}
+Births = lowest. But difficult, cannot look across age groups. Demographic accounting only at population level.
 
-
-
-
-
-The change in stock in this case is population at time $t+1$ minus population at time $t$. The net inflow is births minus deaths. Changes in stock equal the net inflow, as required.
-
-
-
-
-
-
+To do for each age group, need to deaths into ones that occurred to cohort already in age group and cohort entering age group:
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage.pdf}
 \end{center}
 
-\begin{center}
-\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage2.pdf}
-\end{center}
+\begin{align}
+    6 - (5 + 4) & = -0 + -1 + -2 \quad \text{(Age 2+ at $t+1$)} \\
+    5 - 7 & = -1 + -1 \quad \text{(Age 1 at $t+1$)} \\
+    6 - (3 + 5) & = -2    
+\end{align}
 
 
 - without age
@@ -193,10 +198,7 @@ Reference: Magnusson M, Kainu M, Huovari J, Lahti L (2019). “pxweb: R tools fo
 
 \section{Discrepancies}
 
-\section{What are discrepancies?}
-
-- reference to national accounts
-- example from Greenland
+\subsection{What are discrepancies}
 
 
 
@@ -244,6 +246,8 @@ When corrections are summarized over time they diminish. In table x the correcti
     \label{fig:my_label}
 \end{figure}
 
+
+\clearpage
 
 
 \section{Benefits of a demographic account}
