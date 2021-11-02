@@ -15,7 +15,7 @@ data_mig_box <- data.frame(x =     c(3, 5, 5, 3, 4, 3),
                             yend = c(0, 2, 2, 0, 2, 1))
 data_mig_label <- data.frame(x =   c(4, 3.5,  4.5, 3.5, 4.5,  4, 2.8, 2.8),
                              y =  c(2.5, 0.5, 1.5, 2.2, 2.2, -0.4, 0.5, 1.5),
-                             label = c("Migration", 1, 5, "A", "B",
+                             label = c("Moves", 1, 5, "A", "B",
                                        'group("[",list(italic(t),italic(t+1)),")")',
                                        "B", "A"))
 
