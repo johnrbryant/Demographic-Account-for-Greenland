@@ -83,7 +83,7 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
 
 graphics.off()
 pdf(file = "figures_accounts/fig_account_region.pdf",
-    width = 3.2,
+    width = 5,
     height = 1.8)
 plot(p)
 dev.off()
