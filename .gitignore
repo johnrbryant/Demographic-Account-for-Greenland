@@ -4,3 +4,4 @@
 .Ruserdata
 estimate_account/out/*.rds
 estimate_account/out/model.est
+.DS_Store
