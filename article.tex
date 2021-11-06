@@ -74,7 +74,7 @@ One particular type of disaggregation into subpopulations has a special status w
 
 Publishers of age-structured demographic data typically use some variant of the following scheme,
 \begin{center}
-\includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_withage2.pdf}
+\includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_withage_nolex}
 \end{center}
 Population stocks stocks and flows are all disaggregated by the same age groups, which, in the case above, are ages 0, 1, and 2+. (The account in question might apply to non-human animals, or use a unit of measurement that is longer than a year.) The final age group includes everone over a certain age. Births are disaggregated by the age of the mother, rather than the age of the child being born, which is always 0. 
 
@@ -84,13 +84,13 @@ Births = lowest. But difficult, cannot look across age groups. Demographic accou
 
 To do for each age group, need to deaths into ones that occurred to cohort already in age group and cohort entering age group:
 \begin{center}
-\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage.pdf}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage_lex.pdf}
 \end{center}
 
 \begin{align}
-    8 - (3 + 4) & = -2 + 3 - 1 & \text{Age 0 at $t+1$} \\   
+    8 - (3 + 4) & = -2 + 3 - 1 & \text{(Age 0 at $t+1$)} \\   
     9 - 7 & = -(1 + 1) + (4 + 2) - (0 + 2) & \text{(Age 1 at $t+1$)} \\
-    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2) +  & \text{(Age 2+ at $t+1$)} \\
+    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 2+ at $t+1$)} \\
 \end{align}
 
 
