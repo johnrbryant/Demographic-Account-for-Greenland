@@ -23,6 +23,20 @@ data_deaths_box <- data.frame(x =    c(4, 5, 5, 4, 4, 4),
 data_deaths_label <- data.frame(x = c(4.5, 4.5, 4.5, 4.5, 4.5),
                                 y = c(3.2, 0.5, 1.5, 2.5, -0.4),
                                 label = c("Deaths",3, 1, 3, 'group("[",list(italic(t),italic(t+1)),")")'))
+data_immig_box <- data.frame(x =    c(5.5, 6.5, 6.5, 5.5, 5.5, 5.5),
+                              xend = c(6.5, 6.5, 5.5, 5.5, 6.5, 6.5),
+                              y =    c(0, 0, 3, 3, 1, 2),
+                              yend = c(0, 3, 3, 0, 1, 2))
+data_immig_label <- data.frame(x = c(6, 6, 6, 6, 6),
+                                y = c(3.2, 0.5, 1.5, 2.5, -0.4),
+                                label = c("Immigr.",3, 1, 3, 'group("[",list(italic(t),italic(t+1)),")")'))
+data_emig_box <- data.frame(x =    c(7, 8, 8, 7, 7, 7),
+                             xend = c(8, 8, 7, 7, 8, 8),
+                             y =    c(0, 0, 3, 3, 1, 2),
+                             yend = c(0, 3, 3, 0, 1, 2))
+data_emig_label <- data.frame(x = c(7.5, 7.5, 7.5, 7.5, 7.5),
+                               y = c(3.2, 0.5, 1.5, 2.5, -0.4),
+                               label = c("Emigr.",3, 1, 3, 'group("[",list(italic(t),italic(t+1)),")")'))
 data_age_label <- data.frame(x = rep(-0.3, 3),
                              y = c(0.5, 1.5, 2.5),
                              label = c("0", "1", "2+"))
@@ -54,6 +68,18 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     geom_text(aes(label = label),
               data = data_deaths_label,
               parse = TRUE) +
+    ## immig
+    geom_segment(aes(x = x, y = y, xend = xend, yend = yend),
+                 data = data_immig_box) +
+    geom_text(aes(label = label),
+              data = data_immig_label,
+              parse = TRUE) +
+    ## emig
+    geom_segment(aes(x = x, y = y, xend = xend, yend = yend),
+                 data = data_emig_box) +
+    geom_text(aes(label = label),
+              data = data_emig_label,
+              parse = TRUE) +
     ## age labels
     geom_text(aes(label = label),
               data = data_age_label) +
@@ -61,9 +87,9 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
     xlab("") +
     ylab("")
 
-graphics.off()
-pdf(file = "figures_accounts/fig_account_withage2.pdf",
-    width = 3,
-    height = 2)
+# graphics.off()
+# pdf(file = "figures_accounts/fig_account_withage_nolex.pdf",
+#     width = 3,
+#     height = 2)
 plot(p)
-dev.off()
+# dev.off()
