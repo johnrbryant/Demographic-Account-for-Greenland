@@ -51,7 +51,7 @@ A demographic account is a set of linked tabulations of demographic stocks and f
 
 An example of a minimal demographic account is
 \begin{center}
-\includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_noage.pdf}
+\includegraphics[width=0.3\textwidth]{figures_accounts/fig_account_noage.pdf}
 \end{center}
 The population contains 16 people at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people are born and 7 die. The change in stock equals inflows minus outflows,
 \begin{equation*}
@@ -61,7 +61,7 @@ as required.
 
 A slightly more complicated example is
 \begin{center}
-\includegraphics[width=0.7\textwidth]{figures_accounts/fig_account_region.pdf}
+\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_region.pdf}
 \end{center}
 Rather than treating the population as a completely homogenous, this account recognizes two subpopulations, labelled ``A'' and ``B''. A and B might, for instance, denote geographical region, health status, or labour force status. In this example, for simplicity, we allow for movement between the two statuses, but no births, deaths, or other forms of entry or exit to the system as a whole. The demographic accounting identities can be applied separately to each group,
 \begin{align*}
@@ -74,10 +74,17 @@ One particular type of disaggregation into subpopulations has a special status w
 
 Publishers of age-structured demographic data typically use some variant of the following scheme,
 \begin{center}
-\includegraphics[width=0.4\textwidth]{figures_accounts/fig_account_withage_nolex}
+\includegraphics[width=0.45\textwidth]{figures_accounts/fig_account_withage_nolex}
 \end{center}
 Population stocks stocks and flows are all disaggregated by the same age groups, which, in the case above, are ages 0, 1, and 2+. (The account in question might apply to non-human animals, or use a unit of measurement that is longer than a year.) The final age group includes everone over a certain age. Births are disaggregated by the age of the mother, rather than the age of the child being born, which is always 0. 
 
+\begin{equation*}
+  \begin{split}
+    (8+9+6) - (7+4+5) & = (0+7+0) - (3+1+7) \\
+    & \quad \quad + (7+7+5) - (1+5+3)
+  \end{split}
+\end{equation*}
+    
 The problem with the standard scheme for presenting age-classified data is that it does allow the demographic accounting identities to be applied within age groups. If, for instance, we try to  
 
 Births = lowest. But difficult, cannot look across age groups. Demographic accounting only at population level.
@@ -90,18 +97,9 @@ To do for each age group, need to deaths into ones that occurred to cohort alrea
 \begin{align}
     8 - (3 + 4) & = -2 + 3 - 1 & \text{(Age 0 at $t+1$)} \\   
     9 - 7 & = -(1 + 1) + (4 + 2) - (0 + 2) & \text{(Age 1 at $t+1$)} \\
-    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 2+ at $t+1$)} \\
+    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 2+ at $t+1$)}
 \end{align}
 
-
-- without age
-- with age
-   - with cohort
-   - without explicit cohort
-- show the splitting and combining that occurs   
-- age, cohort, and region
-   - internal migration is tricky
-- age, cohort, and region - fixed attribute (sex? birthplace)
 
 
 
