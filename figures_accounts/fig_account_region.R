@@ -8,14 +8,14 @@ data_popn_box <- data.frame(x =    c(0, 2, 2, 0, 1, 0),
                             yend = c(0, 2, 2, 0, 2, 1))
 data_popn_label <- data.frame(x = c(1, 0.5, 1.5, 0.5, 1.5, 0.5, 1.5),
                               y = c(2.2, 0.5, 0.5, 1.5, 1.5, -0.4, -0.4),
-                              label = c("Population", 10, 14, 15, 12, "italic(t)", "italic(t)+1"))
+                              label = c("Population", 6, 9, 10, 8, "italic(t)", "italic(t)+1"))
 data_births_box <- data.frame(x =    c(3, 4, 4, 3, 3),
                               xend = c(4, 4, 3, 3, 4),
                               y =    c(0, 0, 2, 2, 1),
                               yend = c(0, 2, 2, 0, 1))
 data_births_label <- data.frame(x =  c(3.5, 3.5, 3.5,  3.5, 2.8, 2.8),
                                 y =  c(2.2, 0.5, 1.5, -0.4, 0.5, 1.5),
-                                label = c("Births", 2, 3, 
+                                label = c("Births", 5, 3, 
                                           'group("[",list(italic(t),italic(t+1)),")")',
                                           "B", "A"))
 data_deaths_box <- data.frame(x =    c(5, 6, 6, 5, 5),
@@ -24,7 +24,7 @@ data_deaths_box <- data.frame(x =    c(5, 6, 6, 5, 5),
                               yend = c(0, 2, 2, 0, 1))
 data_deaths_label <- data.frame(x =  c(5.5, 5.5, 5.5,  5.5, 4.8, 4.8),
                                 y =  c(2.2, 0.5, 1.5, -0.4, 0.5, 1.5),
-                                label = c("Deaths", 2, 2, 
+                                label = c("Deaths", 3, 4, 
                                           'group("[",list(italic(t),italic(t+1)),")")',
                                           "B", "A"))
 data_mig_box <- data.frame(x =     c(3, 5, 5, 3, 4, 3) + 4,
@@ -33,7 +33,7 @@ data_mig_box <- data.frame(x =     c(3, 5, 5, 3, 4, 3) + 4,
                             yend = c(0, 2, 2, 0, 2, 1))
 data_mig_label <- data.frame(x =   c(4, 3.5,  4.5, 3.5, 4.5,  4, 2.8, 2.8) + 4,
                              y =  c(2.5, 0.5, 1.5, 2.2, 2.2, -0.4, 0.5, 1.5),
-                             label = c("Moves", 1, 5, "A", "B",
+                             label = c("Moves", 6, 7, "A", "B",
                                        'group("[",list(italic(t),italic(t+1)),")")',
                                        "B", "A"))
 
