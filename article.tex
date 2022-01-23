@@ -44,10 +44,10 @@ In this paper we argue that the adoption of formal demographic accounting can he
 \section{What is a demographic account?}
 
 \begin{quote}
-Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings.\citep[][p. 26]{stone1984accounts}
+Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings\citep[][p. 26]{stone1984accounts}.
 \end{quote}
 
-A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows classified, varies from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
+A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows classified, vary from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
 
 An example of a minimal demographic account is
 \begin{center}
@@ -59,9 +59,9 @@ The population contains 16 people at time $t$ and 17 people at time $t+1$; durin
 \end{equation*}
 as required.
 
-A slightly more complicated example is
+ 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_region.pdf}
+\includegraphics[width=0.55\textwidth]{figures_accounts/fig_account_region.pdf}
 \end{center}
 Rather than treating the population as a completely homogenous, this account recognizes two subpopulations, labelled ``A'' and ``B''. A and B might, for instance, denote geographical region, health status, or labour force status. In this example, for simplicity, we allow for movement between the two statuses, but no births, deaths, or other forms of entry or exit to the system as a whole. The demographic accounting identities can be applied separately to each group,
 \begin{align*}
@@ -180,18 +180,16 @@ As the content is not 100 pct accurate, but true and fair, this serves as a mode
 
 
 \subsection{Statbank Greenland} 
-not ready - will be back soon - Lars
-With api access to Pxweb-based statbanks it is now possible to include always updated statistics in calculation 
-
 Statistics Greenland has been disseminating statistical tables with Pxweb as multilingual internet based service since 2001. The technical core is \footnote[the Pxweb-family]{https://www.scb.se/px-web}, primarily developed by Statistics Sweden in cooperation with approximately 40 national statistical offices over a span of 5 decades. 
 
-In 2013 the system opened for api access.(Lars: not sure if stat2go should be mentioned - my playground) As proof of concept www.stat2go.com gives access to a number of different pxweb statbanks, and api allows developers to reuse and include statistical information in numerous solutions.
+In 2013 the system opened for api access. As proof of concept www.stat2go.com gives access to a number of national pxweb-based statbanks, where the api allows developers to reuse and include statistical information in solutions, whether they have commercial ambitions (like knoema.com, statista.com) , supports fact-based documents for knowledge and/or research .
 
-For the R-community the pxweb-package ease consuming data, from any pxweb based statbank. 
+For the R-community CRAN-published packages bridge tables from national statistical institutes directly to statistical analysis. As example Population Accounts from both Greenland and the Faroe Islands can be obtained with some few lines of code, ready for analysis.
 
-(Lars: if this pic is to be used, I will compress it a little with better texts)
+The pxweb package includes functionality to generate needed r-code from many datasources. The function call is pxweb_interactive.
 
-\includegraphics[scale=0.22]{images/pxwebR.png}
+
+\includegraphics[scale=0.22]{images/pxwebR_GF.png}
 
 
 Reference: Magnusson M, Kainu M, Huovari J, Lahti L (2019). “pxweb: R tools for PX-WEB API.”
