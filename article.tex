@@ -12,13 +12,14 @@
 
   \articletype{...}
 
-  \author*[1]{...}
-  \author[2]{...}
-  \author[1]{...} 
-  \runningauthor{...}
-  \affil[1]{...}
-  \affil[2]{...}
-  \title{ Using demographic accounts to enhance official population statistics  }
+  \author*[1]{Lars Pedersen}
+  \author[2]{Junni L. Zhang}
+  \author[3]{John Bryant} 
+  \runningauthor{Lars Pedersen}
+  \affil[1]{Statistics Greenland}
+  \affil[2]{Peking University}
+  \affil[3]{Bayesian Demography Limited}
+  \title{Using demographic accounts to enhance official population statistics}
   \runningtitle{ Demographic accounts for Greenland }
   \subtitle{Demographic accounts for Greenland}
   \abstract{...}
@@ -32,11 +33,11 @@
 
 \section{Introduction} 
 
-A demographic account is to demography what a national account is to macroeconomics. It is a comprehensive description of stocks and flows, linked together by accounting identities, and standardised across countries and datasets. Whereas a national account deals with economic variables such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic variables such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population sizes. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
+A demographic account is to demography what a national account is to macroeconomics. It is a comprehensive description of stocks and flows, linked together by accounting identities, and standardised across countries and datasets. Whereas a national account deals with economic variables such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic variables such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population size. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
 
-National accounts and demographic accounts have, however, followed very different trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as Gross Domestic Product or trade surplus are used by newspapers, politicians, and ordinary people. The United Nations, the European Union, and others have established detailed guidelines on the compilation of national accounts. REFERENCES. Although some demographic accounts, such as the \emph{World Population Prospects}, published by the United Nations Population Division, have become well-known, they are rarely described as demographic accounts, and are, from an accounting perspective, incomplete. Scholars from a variety of disciplines have developed conceptual frameworks and estimation methods for demographic accounts \citep{rees1977spatial,rees1986data, rees1979regional,rees1985choices,rees2012ethnic,bryant2013bayesian, wheldon2013reconstructing,willekens2011population} OTHER. However, no standard, widely-accepted set oc conventions comparable to the UN guidelines for national accounts has emerged. Moreover, the terminology and techniques of demographic accounting are not often used among professional statisticians and demographers.
+National accounts and demographic accounts have, however, followed very different historical trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as ``Gross Domestic Product'' or ``trade surplus'' are used routinely, not just by economists and statisticians, but by newspapers, politicians, and the general public. Detailed guidelines on the compilation of national accounts have been prepared by bodies such as the United Nations and the European Union. REFERENCES. Although demographic publications, such as the \emph{World Population Prospects}, produced by the United Nations Population Division, or population estimates and projections produced by national statistical agencies, have become well-known, they do not, as we discuss below, constitute complete demographic accounts. Scholars from a variety of disciplines have developed conceptual frameworks and estimation methods for demographic accounts \citep{rees1977spatial,rees1986data, rees1979regional,rees1985choices,rees2012ethnic,bryant2013bayesian, wheldon2013reconstructing,willekens2011population} OTHER. However, no set of guidelines have achieved the same prominence or adherence as the official guidelines for national accounts.  Moreover, the terminology and techniques of demographic accounting are not well known, even among statisticians and demographers.
 
-In this paper we argue that the adoption of formal demographic accounting can help improve the clarity, consistency, and easy of use of official population statistics. We illustrate using the case of Greenland, which already publishes explicit demographic accounts. We describe the process of producing demographic accounts for Greenland, the benefits to producing demographic accounts, and the system for disseminating the results to potential users. In the final part of the paper, we discuss the implications for the production of population statistics in other countries.
+In this paper we argue that the adoption of formal demographic accounting could help improve the clarity, consistency, and ease of use of official population statistics. We illustrate using the case of Greenland, which already publishes official demographic accounts. ROAD MAP FOR PAPER.
 
 [Need that Stone's original social and demographic accounts had more than just basic demography]
 
@@ -44,10 +45,10 @@ In this paper we argue that the adoption of formal demographic accounting can he
 \section{What is a demographic account?}
 
 \begin{quote}
-Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings\citep[][p. 26]{stone1984accounts}.
+Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings \citep[][p. 26]{stone1984accounts}.
 \end{quote}
 
-A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows classified, vary from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
+A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows are classified, vary from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
 
 An example of a minimal demographic account is
 \begin{center}
@@ -57,50 +58,43 @@ The population contains 16 people at time $t$ and 17 people at time $t+1$; durin
 \begin{equation*}
   17 - 16 = 8 - 7,
 \end{equation*}
-as required.
+as required. There is only one accounting equation, since the account treats the population as completely homogenous, with everyone belonging to a single group.
 
- 
+Most demographic accounts divide the population into multiple groups. The following account recognizes two groups, labelled ``A'' and ``B''. 
 \begin{center}
 \includegraphics[width=0.55\textwidth]{figures_accounts/fig_account_region.pdf}
 \end{center}
-Rather than treating the population as a completely homogenous, this account recognizes two subpopulations, labelled ``A'' and ``B''. A and B might, for instance, denote geographical region, health status, or labour force status. In this example, for simplicity, we allow for movement between the two statuses, but no births, deaths, or other forms of entry or exit to the system as a whole. The demographic accounting identities can be applied separately to each group,
+A and B could, for instance, denote geographical region, health status, or labour force status. In this example, we assume that people can change their status from A to B and vice versa. The demographic accounting identities are applied separately to each group,
 \begin{align*}
-    11 - 15 & = -5 + 1 \quad \text{(A)}\\
-    14 - 10 & = -1 + 5 \quad \text{(B)}.
+    8 - 10 & = 3 - 4 - 7 + 6 \quad \text{(A)}\\
+    14 - 10 & = 5 - 3 - 6 + 7 \quad \text{(B)}.
 \end{align*}
-When the accounting identities for each group are satisfied, the accounting identity for the system is a whole is necessarily satisfied as well.
+The 7 movements from A to B appear twice in the account, once as a decrement from group A, and once as an increment to group B. Similarly, the 6 movements from B to A appear as a decrement from B and as an increment to A.
 
-One particular type of disaggregation into subpopulations has a special status within demography: disaggregation by age group. Age is special because it is such a strong predictor of demographic behavior. The mortality and migration rates of 20-24 year olds and 90-94 year olds, for instance, differ by several orders of magnitude. Age is also special because movement between age groups is deterministic. Everyone is born into the lowest age group, and then moves upwards at the rate of one age group per period.
+One particular type of disaggregation has a special status within demography: disaggregation by age group. Age is special because it is such a strong predictor of demographic behavior. The mortality and migration rates of 20-24 year olds and 90-94 year olds, for instance, differ by several orders of magnitude. Age is also special because movement between age groups is deterministic. Everyone is born into the lowest age group, and then moves upwards at the rate of one age group per period.
 
-Publishers of age-structured demographic data typically use some variant of the following scheme,
+Producers of age-structured demographic data typically present one value for each combination of age and time, as in
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_accounts/fig_account_withage_nolex}
 \end{center}
-Population stocks stocks and flows are all disaggregated by the same age groups, which, in the case above, are ages 0, 1, and 2+. (The account in question might apply to non-human animals, or use a unit of measurement that is longer than a year.) The final age group includes everone over a certain age. Births are disaggregated by the age of the mother, rather than the age of the child being born, which is always 0. 
+For simplicity, the diagram shows only three age groups, labelled ``0'', ``1'', and ``2+''. (The diagram can be thought of as referring to non-human animals, or using a unit of time longer than a year.) Births are disaggregated by the age of the mother. The diagram includes entries and exits through immigration and emigration, in addition to entries and exits through birth and death.
 
-\begin{equation*}
-  \begin{split}
-    (8+9+6) - (7+4+5) & = (0+7+0) - (3+1+7) \\
-    & \quad \quad + (7+7+5) - (1+5+3)
-  \end{split}
-\end{equation*}
-    
-The problem with the standard scheme for presenting age-classified data is that it does allow the demographic accounting identities to be applied within age groups. If, for instance, we try to  
+Unfortunately, the standard way for formatting age-specific counts is not well suited to demographic accounting. Consider, for instance, the difficulty of applying demographic accounting to the cohort of individuals in the diagram above who are aged 0 at time $t$ and 1 at time $t+1$. The diagram states that there are 3 deaths to people aged 0 during the period $[t,t+1)$. The diagram does not, however, specify whether the deaths occur to the cohort that is aged 0 at time $t$, or to the cohort that is born during the period  $[t,t+1)$. Similarly, the diagram does not specify whether the single death to people aged 1 that occurs during the period belongs to the cohort aged 1 at the start of the period or the cohort that attains age 1 during the period. The counts of immigrations and emigrations have the same ambiguities. 
 
-Births = lowest. But difficult, cannot look across age groups. Demographic accounting only at population level.
+To remove the ambiguities, one more dimension needs to be added to the data.  This dimension needs to distinguish, for each age group $a$, between events experienced by (i) the cohort that is aged $a$ at the start of the period, and (ii) the cohort that attains age $a$ during the period. Demographers refer to events experienced by (i) as belonging to `upper Lexis triangles' and events experienced by (ii) as belonging to `lower Lexis triangles'.
 
-To do for each age group, need to deaths into ones that occurred to cohort already in age group and cohort entering age group:
+The diagram below expands on the one above by distinguishing between Lexis triangles.
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage_lex.pdf}
 \end{center}
-
+Consider again the cohort that is aged 0 at time $t$, which is now shaded grey. It turns out that only one of the three deaths in age group 0 belongs to this cohort. However, the single death in age group 1 also belongs to this cohort. Immigrations and emigrations now also be allocated to cohorts, making detailed demographic accounting possible:
 \begin{align}
     8 - (3 + 4) & = -2 + 3 - 1 & \text{(Age 0 at $t+1$)} \\   
     9 - 7 & = -(1 + 1) + (4 + 2) - (0 + 2) & \text{(Age 1 at $t+1$)} \\
     6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 2+ at $t+1$)}
 \end{align}
 
-
+PRESENT GREENLAND EXAMPLE.
 
 
 \section{Greenland demographic data}
@@ -157,12 +151,12 @@ To allow calculation at time of event a ‘triangles(lexis)’-dimension is prov
 \includegraphics[scale=0.25]{images/PopulationAccountLexis}
 
 
-(Lars: collumns are not in right sort-order!)
+(Lars: columns are not in right sort-order!)
 
 \includegraphics[scale=0.22]{images/PopulationAccountTabX}
 
 
-To be current and of use to society statistics can not wait being 100 pct accurate. Instead we settle when the statistics are true and fair. From experience it has been chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. Then the population estimate is adjusted to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
+To be up to date (timely?) and of use to society statistics can not wait being 100 pct accurate. Instead we settle when the statistics are true and fair. From experience it has been chosen to wait 1 calendar month, to allow the register to be updated with delayed reports. Then the population estimate is adjusted to include events taken place before the report date, January 1st. (or other dates chosen). As long as the number of delayed reported events are approximately the same from one period to the next, the number of events will be approximately equivalent.
 
 But on detailed level (one-year age groups, gender, locality) this will not be true.
 
@@ -186,7 +180,7 @@ In 2013 the system opened for api access. As proof of concept www.stat2go.com gi
 
 For the R-community CRAN-published packages bridge tables from national statistical institutes directly to statistical analysis. As example Population Accounts from both Greenland and the Faroe Islands can be obtained with some few lines of code, ready for analysis.
 
-The pxweb package includes functionality to generate needed r-code from many datasources. The function call is pxweb_interactive.
+The pxweb package includes functionality to generate needed r-code from many datasources. The function call is pxweb\_interactive.
 
 
 \includegraphics[scale=0.22]{images/pxwebR_GF.png}
