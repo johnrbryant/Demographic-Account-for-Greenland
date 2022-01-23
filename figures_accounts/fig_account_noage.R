@@ -58,6 +58,6 @@ p <- ggplot(data_popn_box, aes(x = x, y = y)) +
 graphics.off()
 pdf(file = "figures_accounts/fig_account_noage.pdf",
     width = 2.5,
-    height = 1)
+    height = 1.1)
 plot(p)
 dev.off()
