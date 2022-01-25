@@ -33,9 +33,9 @@
 
 \section{Introduction} 
 
-A demographic account is to demography what a national account is to macroeconomics. It is a comprehensive description of stocks and flows, linked together by accounting identities, and standardised across countries and datasets. Whereas a national account deals with economic variables such as consumption, savings, investment, depreciation, and income, a demographic account deals with demographic variables such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population size. Richard Stone, one of the central figures in the development of modern national accounts also wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
+A demographic account is the demographic equivalent of a national account. It is a comprehensive description of stocks and flows, linked together by accounting identities, and standardised across countries and datasets. Whereas a national account deals with economic variables such as consumption, savings, and investment, a demographic account deals with demographic variables such as births, deaths, migration, and population. Demographic accounts and national accounts in fact share common intellectual origins. William Petty's political arithmetic, for instance, combined estimates of income and expenditure for 17th century England with estimates of population size. Richard Stone, one of the central figures in the development of modern national accounts wrote extensively on social and demographic accounting, and devoted the final part of his Nobel Prize acceptance speech to subject of demographic accounts. REFERENCES.
 
-National accounts and demographic accounts have, however, followed very different historical trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as ``Gross Domestic Product'' or ``trade surplus'' are used routinely, not just by economists and statisticians, but by newspapers, politicians, and the general public. Detailed guidelines on the compilation of national accounts have been prepared by bodies such as the United Nations and the European Union. REFERENCES. Although demographic publications, such as the \emph{World Population Prospects}, produced by the United Nations Population Division, or population estimates and projections produced by national statistical agencies, have become well-known, they do not, as we discuss below, constitute complete demographic accounts. Scholars from a variety of disciplines have developed conceptual frameworks and estimation methods for demographic accounts \citep{rees1977spatial,rees1986data, rees1979regional,rees1985choices,rees2012ethnic,bryant2013bayesian, wheldon2013reconstructing,willekens2011population} OTHER. However, no set of guidelines have achieved the same prominence or adherence as the official guidelines for national accounts.  Moreover, the terminology and techniques of demographic accounting are not well known, even among statisticians and demographers.
+National accounts and demographic accounts have, however, followed very different institutional trajectories. National accounts are the centerpiece of official economic statistics. National accounting terms such as ``Gross Domestic Product'' or ``trade surplus'' are used routinely, not just by economists and statisticians, but by newspapers, politicians, and the general public. Detailed guidelines on the compilation of national accounts have been prepared by bodies such as the United Nations and the European Union. REFERENCES. Although some standardised demographic tabulations such as the United Nations \emph{World Population Prospects}, or population estimates and projections produced by national statistical agencies, are widely used and discussed, they do provide enough detail to permit detailed accounting. Scholars from a variety of disciplines have developed conceptual frameworks and estimation methods for demographic accounts \citep{rees1977spatial,rees1986data, rees1979regional,rees1985choices,rees2012ethnic,bryant2013bayesian, wheldon2013reconstructing,willekens2011population} OTHER. However, no set of guidelines have achieved the same prominence or adherence as the official guidelines for national accounts.  Moreover, the terminology and techniques of demographic accounting are not well known, even among statisticians and demographers.
 
 In this paper we argue that the adoption of formal demographic accounting could help improve the clarity, consistency, and ease of use of official population statistics. We illustrate using the case of Greenland, which already publishes official demographic accounts. ROAD MAP FOR PAPER.
 
@@ -48,15 +48,23 @@ In this paper we argue that the adoption of formal demographic accounting could 
 Demographic accounts, like any other type of account, are based on the equality of inflows and outflows over a period of time. In the demographic case, the inflows and outflows are composed of human beings \citep[][p. 26]{stone1984accounts}.
 \end{quote}
 
-A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows are classified, vary from application to application. In all cases, however, the stocks and flows are linked via accounting identities that equate changes in stock to inflows minus outflows. We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
+A demographic account is a set of linked tabulations of demographic stocks and flows. The stocks and flows that are included in the account, and the ways that the stocks and flows are classified, vary from application to application. In all cases, however, the stocks and flows are linked via the accounting identity
+\begin{equation*}
+    \text{change in stock} = \text{inflows} - \text{outflows}.
+\end{equation*}
+We illustrate the underlying principles using some stylised examples, before presenting an extract from a full scale official account for Greenland.
 
 An example of a minimal demographic account is
 \begin{center}
 \includegraphics[width=0.3\textwidth]{figures_accounts/fig_account_noage.pdf}
 \end{center}
-The population contains 16 people at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people are born and 7 die. The change in stock equals inflows minus outflows,
+The population contains 16 people at time $t$ and 17 people at time $t+1$; during the interval between $t$ and $t+1$, 8 people are born and 7 die. The change in stock,
 \begin{equation*}
-  17 - 16 = 8 - 7,
+  17 - 16 = 1,
+\end{equation*}
+equals inflows minus outflows,
+\begin{equation*}
+   8 - 7 = 1,
 \end{equation*}
 as required. There is only one accounting equation, since the account treats the population as completely homogenous, with everyone belonging to a single group.
 
@@ -64,35 +72,73 @@ Most demographic accounts divide the population into multiple groups. The follow
 \begin{center}
 \includegraphics[width=0.55\textwidth]{figures_accounts/fig_account_region.pdf}
 \end{center}
-A and B could, for instance, denote geographical region, health status, or labour force status. In this example, we assume that people can change their status from A to B and vice versa. The demographic accounting identities are applied separately to each group,
+A and B could, for instance, denote geographical region, health status, or labour force status. In this example, we assume that people can change their status from A to B and vice versa.
+
+Demographic accounting can be done for the population as a whole,
+\begin{equation*}
+    17 - 16 = 8 - 7,
+\end{equation*}
+in which case movements between A and B do not appear, since they do count as inflows to or outflows from the population as a whole. Demographic accounting can also be done for each group,
 \begin{align*}
     8 - 10 & = 3 - 4 - 7 + 6 \quad \text{(A)}\\
-    14 - 10 & = 5 - 3 - 6 + 7 \quad \text{(B)}.
+    14 - 10 & = 5 - 3 - 6 + 7 \quad \text{(B)},
 \end{align*}
-The 7 movements from A to B appear twice in the account, once as a decrement from group A, and once as an increment to group B. Similarly, the 6 movements from B to A appear as a decrement from B and as an increment to A.
+in which case movements between A and B do appear. The 7 movements from A to B show up twice in the account, once as a decrement from group A, and once as an increment to group B. Similarly, the 6 movements from B to A show up as a decrement from B and as an increment to A.
 
-One particular type of disaggregation has a special status within demography: disaggregation by age group. Age is special because it is such a strong predictor of demographic behavior. The mortality and migration rates of 20-24 year olds and 90-94 year olds, for instance, differ by several orders of magnitude. Age is also special because movement between age groups is deterministic. Everyone is born into the lowest age group, and then moves upwards at the rate of one age group per period.
+One particular type of disaggregation has a special status within demography: disaggregation by age group. Age is special because it is such a strong predictor of demographic behavior. The mortality and migration rates of 20-24 year olds and 90-94 year olds, for instance, differ by several orders of magnitude. Age is also special because movement between age groups is deterministic. Everyone is born into the lowest age group and then moves upwards at the rate of one age group per period.
 
-Producers of age-structured demographic data typically present one value for each combination of age and time, as in
+Producers of age-structured demographic data typically present some variant on the format
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_accounts/fig_account_withage_nolex}
 \end{center}
-For simplicity, the diagram shows only three age groups, labelled ``0'', ``1'', and ``2+''. (The diagram can be thought of as referring to non-human animals, or using a unit of time longer than a year.) Births are disaggregated by the age of the mother. The diagram includes entries and exits through immigration and emigration, in addition to entries and exits through birth and death.
+For simplicity, the diagram here only shows three age groups, labelled ``0'', ``1'', and ``2+''. Actual tabulations typically include more age groups and time periods, and disaggregate by additional dimensions such as sex or gender.
 
-Unfortunately, the standard way for formatting age-specific counts is not well suited to demographic accounting. Consider, for instance, the difficulty of applying demographic accounting to the cohort of individuals in the diagram above who are aged 0 at time $t$ and 1 at time $t+1$. The diagram states that there are 3 deaths to people aged 0 during the period $[t,t+1)$. The diagram does not, however, specify whether the deaths occur to the cohort that is aged 0 at time $t$, or to the cohort that is born during the period  $[t,t+1)$. Similarly, the diagram does not specify whether the single death to people aged 1 that occurs during the period belongs to the cohort aged 1 at the start of the period or the cohort that attains age 1 during the period. The counts of immigrations and emigrations have the same ambiguities. 
+The standard format for age-structured demographic data does not include enough information to permit detailed demographic accounting. The format does allow accounting for the population as a whole. We are able to calculate changes in stocks
+\begin{equation*}
+    (6+9+8)-(5+4+7) = 23 - 16 = 7,
+\end{equation*}
+and inflows minus outflows, 
+\begin{equation*}
+    (0+7+0)-(7+1+3)+(5+7+7)-(3+5+1) = 7 - 10 + 19 - 9 = 7,
+\end{equation*}
+and check that they are the same. The format does not, however, allow us to do demographic accounting within age groups. 
 
-To remove the ambiguities, one more dimension needs to be added to the data.  This dimension needs to distinguish, for each age group $a$, between events experienced by (i) the cohort that is aged $a$ at the start of the period, and (ii) the cohort that attains age $a$ during the period. Demographers refer to events experienced by (i) as belonging to `upper Lexis triangles' and events experienced by (ii) as belonging to `lower Lexis triangles'.
+Consider what happens, for instance, when we try to apply demographic accounting to individuals who were aged 0 at time $t$. Calculating the change in stock for these individuals is easy. Individuals who were aged 0 at time $t$ are aged 1 at time $t+1$. The change in stock is therefore 9 - 7 = 2. Calculating inflows and outflows, however, is more difficult. Individuals who were aged 0 at time $t$ are presumably responsible for some of the 3 deaths, 7 immigrations, and 1 emigration that occur to 0 year olds during the period $[t,t+1)$. However, it is impossible to tell exactly how many, since since some of the events could also have occurred to individuals who were born during the period. Similarly, individuals who were aged 0 at time $t$ are presumably responsible for some of the 7 births, 1 death, 7 immigrations, and 5 emigrations that occur to 1 year olds during the period. But once again it is not possible to tell exactly how many, in this case because some of the events may have occurred to individuals who were already aged 1 at time $t$.
+Without the ability to calculate inflows and outflows for individuals aged 0 at time $t$, we cannot do demographic accounting for this group.
 
-The diagram below expands on the one above by distinguishing between Lexis triangles.
+Groups such as ``individuals aged 0 at time $t$'', ``individuals born during period $[t, t+1)$'', and ``individuals aged 1 at time $t$'' are examples of birth cohorts, that is, collections of individuals all born during the same period. Cohorts always appear in some form in demographic accounting involving age, since, to relate stocks at one period to stocks at another period, we need to follow cohorts. The fundamental obstacle to doing demographic accounting with standard formats like the one above is that the formats do not contain enough information to unambiguously assign events to cohorts.
+
+To remove the ambiguity, each combination of age and period needs to be split into two. We need to be able to distinguish between
+\begin{enumerate}
+    \item events experienced by the cohort that belongs to age group $a$ at the start of the period, and
+    item events experience by the cohort that enters age group $a$ during the period.
+\end{enumerate}
+Demographers refer to the first set of events as belonging to `upper Lexis triangles' and refer to the second set of events as belonging to `lower Lexis triangles'.
+
+The diagram below expands on the previous one by adding a distinction between Lexis triangles.
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figures_accounts/fig_account_withage_lex.pdf}
 \end{center}
-Consider again the cohort that is aged 0 at time $t$, which is now shaded grey. It turns out that only one of the three deaths in age group 0 belongs to this cohort. However, the single death in age group 1 also belongs to this cohort. Immigrations and emigrations now also be allocated to cohorts, making detailed demographic accounting possible:
+Consider again the cohort aged 0 at time $t$. With Lexis triangles now shown, we can see that the cohort aged 0 at time $t$ experienced 1+1 deaths, 4+2 immigrations, and 0+2 emigrations, for a total inflow of 6 and outflow of 4, which is consistent with a change in stock of 2.
+
+Births have a special status within a demographic account that includes age. Births involve two people: the person having the birth, and the person being born. In a demographic account that includes age, births are typically tabulated by the age of the person having the birth, not the age of the person being born, which is always zero. Births appear in demographic accounting as a type of starting population, for the cohort being born. 
+
+For the cohort that is born during the period $[t,t+1)$ in our diagram, the starting population is obtained by adding up over the age and cohort of the parent:
+\begin{equation*}
+    0 + 0 + 3 + 4 + 0 + 0 = 7.
+\end{equation*}
+The change in stock is
+\begin{equation*}
+    8 - 7 = 1.
+\end{equation*}
+The 
+Analogous calculations can be carried out for other cohorts:,
 \begin{align}
-    8 - (3 + 4) & = -2 + 3 - 1 & \text{(Age 0 at $t+1$)} \\   
-    9 - 7 & = -(1 + 1) + (4 + 2) - (0 + 2) & \text{(Age 1 at $t+1$)} \\
-    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 2+ at $t+1$)}
+    8 - (3 + 4) & = -2 + 3 - 1 & \text{(Born during $[t,t+1)$)} \\   
+    9 - 7 & = -(1 + 1) + (4 + 2) - (0 + 2) & \text{(Age 0 at $t$)} \\
+    6 - (5 + 4) & = -(0 + 3 + 4) + (5 + 2 + 3) - (3 + 1 + 2)  & \text{(Age 1+ at $t$)}
 \end{align}
+(Following standard demographic practice, we combine the two oldest cohorts to obtain values for the open-ended age group.)
 
 PRESENT GREENLAND EXAMPLE.
 
